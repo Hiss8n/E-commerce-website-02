@@ -152,7 +152,7 @@
     //grab btn container fron html
     container.innerHTML=categoryBtns;
     //get the btns to render the item dependimg on categories
-     const filterbtns=container.querySelector('.filter-btn');
+     const filterbtns=container.querySelectorAll('.filter-btn');
      filterbtns.forEach((btn)=>{
       btn.addEventListener('click',(e)=>{
       const category=e.currentTarget.dataset.id;
